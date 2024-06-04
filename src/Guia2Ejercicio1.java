@@ -1,9 +1,8 @@
-/*
-Escribir un programa que pida dos números enteros por teclado y calcule la suma de los dos.
-El programa deberá después mostrar el resultado de la suma
- */
+
+/*Crear un programa que dado un número determine si es par o impar.*/
 
 import java.util.Scanner;
+
 
 public class Guia2Ejercicio1 {
 
@@ -11,15 +10,15 @@ public class Guia2Ejercicio1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Ingrese 2 numeros enteros: ");
+        int num = sc.nextInt();
         
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        if (num % 2 == 0){
         
-        System.out.println(num1 + num2);
+            System.out.println("Su numero es Par");
+        } else {
         
+            System.out.println("Su numero es Impar");
+        }
     }
     
 }
-
-
